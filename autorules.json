@@ -1,0 +1,2046 @@
+{
+    "commands": [
+      {
+        "name": "Save File",
+        "command": "save_file",
+        "args": {
+          "file_path": "<file_path>",
+          "content": "<file_content>"
+        }
+      },
+      {
+        "name": "Write to Word Document",
+        "command": "write_to_word",
+        "args": {
+          "file_path": "<file_path>",
+          "content": "<file_content>"
+        }
+      },
+      {
+        "name": "Write to Excel Spreadsheet",
+        "command": "write_to_excel",
+        "args": {
+          "file_path": "<file_path>",
+          "content": "<file_content>"
+        }
+      },
+      {
+        "name": "Write to RTF Document",
+        "command": "write_to_rtf",
+        "args": {
+          "file_path": "<file_path>",
+          "content": "<file_content>"
+        }
+      },
+      {
+        "name": "Write to Text File",
+        "command": "write_to_text",
+        "args": {
+          "file_path": "<file_path>",
+          "content": "<file_content>"
+        }
+      },
+      {
+        "name": "Convert Text to PDF",
+        "command": "convert_to_pdf",
+        "args": {
+          "text": "<text_content>"
+        }
+      },
+      {
+        "name": "Save Web Page as PDF",
+        "command": "save_webpage_as_pdf",
+        "args": {
+          "url": "<webpage_url>",
+          "save_path": "<save_path>"
+        }
+      },
+      {
+        "name": "Extract Text from PDF",
+        "command": "extract_text_from_pdf",
+        "args": {
+          "file_path": "<pdf_file_path>"
+        }
+      },
+      {
+        "name": "Extract Images from PDF",
+        "command": "extract_images_from_pdf",
+        "args": {
+          "file_path": "<pdf_file_path>"
+        }
+      },
+      {
+        "name": "Parse JSON",
+        "command": "parse_json",
+        "args": {
+          "json_string": "<json_string>"
+        }
+      },
+      {
+        "name": "Parse XML",
+        "command": "parse_xml",
+        "args": {
+          "xml_string": "<xml_string>"
+        }
+      },
+      {
+        "name": "Parse CSV",
+        "command": "parse_csv",
+        "args": {
+          "csv_string": "<csv_string>"
+        }
+      },
+      {
+        "name": "Split Text into Sentences",
+        "command": "split_text_into_sentences",
+        "args": {
+          "text": "<text_content>"
+        }
+      },
+      {
+        "name": "Split Text into Words",
+        "command": "split_text_into_words",
+        "args": {
+          "text": "<text_content>"
+        }
+      },
+      {
+        "name": "Count Word Frequency",
+        "command": "count_word_frequency",
+        "args": {
+          "text": "<text_content>"
+        }
+      },
+      {
+        "name": "Detect Language",
+        "command": "detect_language",
+        "args": {
+          "text": "<text_content>"
+        }
+      },
+      {
+        "name": "Translate Text",
+        "command": "translate_text",
+        "args": {
+          "text": "<text_content>",
+          "target_language": "<target_language>"
+        }
+      },
+      {
+        "name": "Generate Password",
+        "command": "generate_password",
+        "args": {
+          "length":
+          "<password_length>"
+        }
+      },
+      {
+        "name": "Calculate Mathematical Expression",
+        "command": "calculate_math_expression",
+        "args": {
+          "expression": "<math_expression>"
+        }
+      },
+      {
+        "name": "Generate Random Number",
+        "command": "generate_random_number",
+        "args": {
+          "min": "<min_value>",
+          "max": "<max_value>"
+        }
+      },
+      {
+        "name": "Generate QR Code",
+        "command": "generate_qr_code",
+        "args": {
+          "data": "<qr_code_data>"
+        }
+      },
+      {
+        "name": "Generate Barcode",
+        "command": "generate_barcode",
+        "args": {
+          "data": "<barcode_data>",
+          "barcode_type": "<barcode_type>"
+        }
+      },
+      {
+        "name": "Generate Lorem Ipsum Text",
+        "command": "generate_lorem_ipsum",
+        "args": {
+          "paragraphs": "<num_paragraphs>"
+        }
+      },
+      {
+        "name": "Retrieve Current Date and Time",
+        "command": "get_current_date_time",
+        "args": {}
+      },
+      {
+        "name": "Delay Execution",
+        "command": "delay_execution",
+        "args": {
+          "seconds": "<num_seconds>"
+        }
+      },
+      {
+        "name": "Execute Shell Command",
+        "command": "execute_shell_command",
+        "args": {
+          "command": "<shell_command>"
+        }
+      },
+      {
+        "name": "Generate Hash",
+        "command": "generate_hash",
+        "args": {
+          "text": "<text_to_hash>",
+          "hash_algorithm": "<hash_algorithm>"
+        }
+      },
+      {
+        "name": "Compress File",
+        "command": "compress_file",
+        "args": {
+          "file_path": "<file_path>"
+        }
+      },
+      {
+        "name": "Decompress File",
+        "command": "decompress_file",
+        "args": {
+          "file_path": "<file_path>"
+        }
+      },
+      {
+        "name": "Send Email",
+        "command": "send_email",
+        "args": {
+          "recipient": "<email_recipient>",
+          "subject": "<email_subject>",
+          "body": "<email_body>",
+          "attachments": "<email_attachments>",
+          "smtp_server": "<smtp_server>",
+          "smtp_port": "<smtp_port>",
+          "smtp_username": "<smtp_username>",
+          "smtp_password": "<smtp_password>"
+        }    {
+            "name": "Task Complete (Shutdown)",
+            "command": "task_complete",
+            "args": {
+              "reason": "<reason>"
+            }
+          },
+          {
+            "name": "Google Books Search",
+            "command": "google_books_search",
+            "args": {
+              "query": "<search_query>",
+              "api_key": "<google_books_api_key>"
+            }
+          },
+          {
+            "name": "Create Asana Task",
+            "command": "asana_create_task",
+            "args": {
+              "project_id": "<project_id>",
+              "task_name": "<task_name>",
+              "assignee": "<assignee>",
+              "due_date": "<due_date>",
+              "api_key": "<asana_api_key>"
+            }
+          },
+          {
+            "name": "Update Asana Task",
+            "command": "asana_update_task",
+            "args": {
+              "task_id": "<task_id>",
+              "task_updates": "<task_updates>",
+              "api_key": "<asana_api_key>"
+            }
+          },
+          {
+            "name": "Get Asana Task Details",
+            "command": "asana_get_task_details",
+            "args": {
+              "task_id": "<task_id>",
+              "api_key": "<asana_api_key>"
+            }
+          },
+          {
+            "name": "Assign Asana Task",
+            "command": "asana_assign_task",
+            "args": {
+              "task_id": "<task_id>",
+              "assignee": "<assignee>",
+              "api_key": "<asana_api_key>"
+            }
+          },
+          {
+            "name": "Set Asana Task Due Date",
+            "command": "asana_set_task_due_date",
+            "args": {
+              "task_id": "<task_id>",
+              "due_date": "<due_date>",
+              "api_key": "<asana_api_key>"
+            }
+          },
+          {
+            "name": "Complete Asana Task",
+            "command": "asana_complete_task",
+            "args": {
+              "task_id": "<task_id>",
+              "api_key": "<asana_api_key>"
+            }
+          },
+          {
+            "name": "List Asana Projects",
+            "command": "asana_list_projects",
+            "args": {
+              "api_key": "<asana_api_key>"
+            }
+          },
+          {
+            "name": "List Asana Tasks",
+            "command": "asana_list_tasks",
+            "args": {
+              "project_id": "<project_id>",
+              "api_key": "<asana_api_key>"
+            }
+          },
+          {
+            "name": "Create Clio Matter",
+            "command": "clio_create_matter",
+            "args": {
+              "name": "<matter_name>",
+              "description": "<matter_description>",
+              "api_key": "<clio_api_key>"
+            }
+          },
+          {
+            "name": "Get Clio Matter Details",
+            "command": "clio_get_matter_details",
+            "args": {
+              "matter_id": "<matter_id>",
+              "api_key": "<clio_api_key>"
+            }
+          },
+          {
+            "name": "List Clio Matters",
+            "command": "clio_list_matters",
+            "args": {
+              "api_key": "<clio_api_key>"
+            }
+          },
+          {
+            "name": "Create Clio Contact",
+            "command": "clio_create_contact",
+            "args": {
+              "name": "<contact_name>",
+              "email": "<contact_email>",
+              "phone": "<contact_phone>",
+             
+              {
+                "commands": [
+                  {
+                    "name": "Google Search",
+                    "command": "google",
+                    "args": {
+                      "input": "<search_query>"
+                    }
+                  },
+                  {
+                    "name": "Browse Website",
+                    "command": "browse_website",
+                    "args": {
+                      "url": "<website_url>",
+                      "question": "<question_to_find_on_website>"
+                    }
+                  },
+                  {
+                    "name": "Start GPT Agent",
+                    "command": "start_agent",
+                    "args": {
+                      "name": "<agent_name>",
+                      "task": "<short_task_description>",
+                      "prompt": "<prompt_message>"
+                    }
+                  },
+                  {
+                    "name": "Message GPT Agent",
+                    "command": "message_agent",
+                    "args": {
+                      "key": "<agent_key>",
+                      "message": "<message_content>"
+                    }
+                  },
+                  {
+                    "name": "List GPT Agents",
+                    "command": "list_agents",
+                    "args": {}
+                  },
+                  {
+                    "name": "Delete GPT Agent",
+                    "command": "delete_agent",
+                    "args": {
+                      "key": "<agent_key>"
+                    }
+                  },
+                  {
+                    "name": "Clone Repository",
+                    "command": "clone_repository",
+                    "args": {
+                      "repository_url": "<repository_url>",
+                      "clone_path": "<local_directory>"
+                    }
+                  },
+                  {
+                    "name": "Write to File",
+                    "command": "write_to_file",
+                    "args": {
+                      "file": "<filename>",
+                      "text": "<text_content>"
+                    }
+                  },
+                  {
+                    "name": "Read File",
+                    "command": "read_file",
+                    "args": {
+                      "file": "<filename>"
+                    }
+                  },
+                  {
+                    "name": "Append to File",
+                    "command": "append_to_file",
+                    "args": {
+                      "file": "<filename>",
+                      "text": "<text_content>"
+                    }
+                  },
+                  {
+                    "name": "Delete File",
+                    "command": "delete_file",
+                    "args": {
+                      "file": "<filename>"
+                    }
+                  },
+                  {
+                    "name": "Search Files",
+                    "command": "search_files",
+                    "args": {
+                      "directory": "<directory_path>"
+                    }
+                  },
+                  {
+                    "name": "Evaluate Code",
+                    "command": "evaluate_code",
+                    "args": {
+                      "code": "<code_string>"
+                    }
+                  },
+                  {
+                    "name": "Get Improved Code",
+                    "command": "improve_code",
+                    "args": {
+                      "suggestions": "<list_of_suggestions>",
+                      "code": "<code_string>"
+                    }
+                  },
+                  {
+                    "name": "Write Tests",
+                    "command": "write_tests",
+                    "args": {
+                      "code": "<code_string>",
+                      "focus": "<list_of_focus_areas>"
+                    }
+                  },
+                  {
+                    "name": "Execute Python File",
+                    "command": "execute_python_file",
+                    "args": {
+                      "file": "<filename>"
+                    }
+                  },
+                  {
+                    "name": "Generate Image",
+                    "command": "generate_image",
+                    "args": {
+                      "prompt": "<prompt_message>"
+                    }
+                  },
+                  {
+                    "name": "Send Tweet",
+                    "command": "send_tweet",
+                    "args": {
+                      "text": "<tweet_content>"
+                    }
+                  },
+                  {
+                    "name": "Do Nothing",
+                    "command": "do_nothing",
+                    "args": {}
+                  },
+                  {
+                    "name": "Task
+                    {
+                        "commands": [
+                          {
+                            "name": "send_tweet",
+                            "description": "Send Tweet",
+                            "arguments": {
+                              "tweet_text": "<tweet_text>"
+                            }
+                          },
+                          {
+                            "name": "browse_website",
+                            "description": "Browse Website",
+                            "arguments": {
+                              "url": "<url>",
+                              "question": "<what_to_find_on_website>"
+                            }
+                          },
+                          {
+                            "name": "write_tests",
+                            "description": "Write Tests",
+                            "arguments": {
+                              "code": "<full_code_string>",
+                              "focus": "<list_of_focus_areas>"
+                            }
+                          },
+                          {
+                            "name": "delete_agent",
+                            "description": "Delete GPT Agent",
+                            "arguments": {
+                              "key": "<key>"
+                            }
+                          },
+                          {
+                            "name": "list_agents",
+                            "description": "List GPT Agents",
+                            "arguments": {}
+                          },
+                          {
+                            "name": "message_agent",
+                            "description": "Message GPT Agent",
+                            "arguments": {
+                              "key": "<key>",
+                              "message": "<message>"
+                            }
+                          },
+                          {
+                            "name": "start_agent",
+                            "description": "Start GPT Agent",
+                            "arguments": {
+                              "name": "<name>",
+                              "task": "<short_task_desc>",
+                              "prompt": "<prompt>"
+                            }
+                          },
+                          {
+                            "name": "task_complete",
+                            "description": "Task Complete (Shutdown)",
+                            "arguments": {
+                              "reason": "<reason>"
+                            }
+                          },
+                          {
+                            "name": "codex_code_completion",
+                            "description": "Code Completion with GPT-3.5 Turbo",
+                            "arguments": {
+                              "context": "<code_context>",
+                              "language": "<programming_language>",
+                              "top_k": "<integer>"
+                            }
+                          },
+                          {
+                            "name": "codex_language_translation",
+                            "description": "Language Translation with GPT-3.5 Turbo",
+                            "arguments": {
+                              "text": "<text>",
+                              "source_language": "<source_language>",
+                              "target_language": "<target_language>"
+                            }
+                          },
+                          {
+                            "name": "codex_summarization",
+                            "description": "Text Summarization with GPT-3.5 Turbo",
+                            "arguments": {
+                              "text": "<text>",
+                              "max_length": "<integer>"
+                            }
+                          },
+                          {
+                            "name": "codex_dialogue",
+                            "description": "Conduct Dialogue with GPT-3.5 Turbo",
+                            "arguments": {
+                              "messages": "<list_of_messages>",
+                              "options": "<list_of_options>"
+                            }
+                          },
+                          {
+                            "name": "codex_code_generation",
+                            "description": "Code Generation with GPT-3.5 Turbo",
+                            "arguments": {
+                              "prompt": "<code_generation_prompt>",
+                              "language": "<programming_language>",
+                              "top_p": "<float>",
+                              "temperature": "<float>"
+                            }
+                          },
+                          {
+                            "name": "outlook_send_email",
+                            "description": "Send Email via Outlook API",
+                            "arguments": {
+                              "subject": "<email_subject>",
+                              "body": "<email_body>",
+                              "recipient": "<recipient_email>"
+                            }
+                          },
+                          {
+                            "name": "create_word_document",
+                            "description": "Create Word Document",
+                            "arguments": {
+                              "title": "<document_title>",
+                              "content": "<document_content>"
+                            }
+                          },
+                          {
+                            "name": "read_word_document",
+                            "description": "Read Word Document",
+                                          
+                            {
+                                "commands": [
+                                  {
+                                    "name": "clio_list_matters",
+                                    "description": "List matters in Clio",
+                                    "arguments": {}
+                                  },
+                                  {
+                                    "name": "clio_get_matter_details",
+                                    "description": "Get details of a specific matter in Clio",
+                                    "arguments": {
+                                      "matter_id": "<matter_id>"
+                                    }
+                                  },
+                                  {
+                                    "name": "clio_list_contacts",
+                                    "description": "List contacts in Clio",
+                                    "arguments": {}
+                                  },
+                                  {
+                                    "name": "clio_get_contact_details",
+                                    "description": "Get details of a specific contact in Clio",
+                                    "arguments": {
+                                      "contact_id": "<contact_id>"
+                                    }
+                                  },
+                                  {
+                                    "name": "clio_create_task",
+                                    "description": "Create a task in Clio",
+                                    "arguments": {
+                                      "matter_id": "<matter_id>",
+                                      "task_name": "<task_name>",
+                                      "due_date": "<due_date>",
+                                      "assignee": "<assignee>"
+                                    }
+                                  },
+                                  {
+                                    "name": "clio_list_tasks",
+                                    "description": "List tasks in Clio",
+                                    "arguments": {
+                                      "matter_id": "<matter_id>"
+                                    }
+                                  },
+                                  {
+                                    "name": "mongodb_find_documents",
+                                    "description": "Find documents in a MongoDB collection",
+                                    "arguments": {
+                                      "collection": "<collection_name>",
+                                      "query": "<query_object>",
+                                      "projection": "<projection_object>"
+                                    }
+                                  },
+                                  {
+                                    "name": "mongodb_insert_document",
+                                    "description": "Insert a document into a MongoDB collection",
+                                    "arguments": {
+                                      "collection": "<collection_name>",
+                                      "document": "<document_object>"
+                                    }
+                                  },
+                                  {
+                                    "name": "mongodb_update_documents",
+                                    "description": "Update documents in a MongoDB collection",
+                                    "arguments": {
+                                      "collection": "<collection_name>",
+                                      "query": "<query_object>",
+                                      "update": "<update_object>"
+                                    }
+                                  },
+                                  {
+                                    "name": "mongodb_delete_documents",
+                                    "description": "Delete documents from a MongoDB collection",
+                                    "arguments": {
+                                      "collection": "<collection_name>",
+                                      "query": "<query_object>"
+                                    }
+                                  },
+                                  {
+                                    "name": "asana_create_task",
+                                    "description": "Create a task in Asana",
+                                    "arguments": {
+                                      "project_id": "<project_id>",
+                                      "task_name": "<task_name>",
+                                      "assignee": "<assignee>",
+                                      "due_date": "<due_date>"
+                                    }
+                                  },
+                                  {
+                                    "name": "asana_update_task",
+                                    "description": "Update a task in Asana",
+                                    "arguments": {
+                                      "task_id": "<task_id>",
+                                      "task_updates": "<task_updates>"
+                                    }
+                                  },
+                                  {
+                                    "name": "asana_get_task_details",
+                                    "description": "Get details of a task in Asana",
+                                    "arguments": {
+                                      "task_id": "<task_id>"
+                                    }
+                                  },
+                                  {
+                                    "name": "asana_assign_task",
+                                    "description": "Assign a task in Asana",
+                                    "arguments": {
+                                      "task_id": "<task_id>",
+                                      "assignee": "<assignee>"
+                                    }
+                                  },
+                                  {
+                                    "name": "asana_set_task_due_date",
+                                    "description": "Set due date for a task in Asana",
+                                    "arguments": {
+                                      "task_id": "<task_id>",
+                                      "due_date": "<due_date>"
+                                      {
+                                        "commands": [
+                                          {
+                                            "name": "zapier_send_sms",
+                                            "description": "Send SMS with Zapier",
+                                            "arguments": {
+                                              "phone_number": "<phone_number>",
+                                              "message": "<message_content>"
+                                            }
+                                          },
+                                          {
+                                            "name": "mongodb_find_documents",
+                                            "description": "Find documents in a MongoDB collection",
+                                            "arguments": {
+                                              "collection": "<collection_name>",
+                                              "query": "<query_object>",
+                                              "projection": "<projection_object>"
+                                            }
+                                          },
+                                          {
+                                            "name": "mongodb_insert_document",
+                                            "description": "Insert a document into a MongoDB collection",
+                                            "arguments": {
+                                              "collection": "<collection_name>",
+                                              "document": "<document_object>"
+                                            }
+                                          },
+                                          {
+                                            "name": "mongodb_update_documents",
+                                            "description": "Update documents in a MongoDB collection",
+                                            "arguments": {
+                                              "collection": "<collection_name>",
+                                              "query": "<query_object>",
+                                              "update": "<update_object>"
+                                            }
+                                          },
+                                          {
+                                            "name": "mongodb_delete_documents",
+                                            "description": "Delete documents from a MongoDB collection",
+                                            "arguments": {
+                                              "collection": "<collection_name>",
+                                              "query": "<query_object>"
+                                            }
+                                          },
+                                          {
+                                            "name": "asana_create_task",
+                                            "description": "Create a task in Asana",
+                                            "arguments": {
+                                              "project_id": "<project_id>",
+                                              "task_name": "<task_name>",
+                                              "assignee": "<assignee>",
+                                              "due_date": "<due_date>"
+                                            }
+                                          },
+                                          {
+                                            "name": "asana_update_task",
+                                            "description": "Update a task in Asana",
+                                            "arguments": {
+                                              "task_id": "<task_id>",
+                                              "task_updates": "<task_updates>"
+                                            }
+                                          },
+                                          {
+                                            "name": "asana_get_task_details",
+                                            "description": "Get details of a task in Asana",
+                                            "arguments": {
+                                              "task_id": "<task_id>"
+                                            }
+                                          },
+                                          {
+                                            "name": "asana_assign_task",
+                                            "description": "Assign a task in Asana",
+                                            "arguments": {
+                                              "task_id": "<task_id>",
+                                              "assignee": "<assignee>"
+                                            }
+                                          },
+                                          {
+                                            "name": "asana_set_task_due_date",
+                                            "description": "Set due date for a task in Asana",
+                                            "arguments": {
+                                              "task_id": "<task_id>",
+                                              "due_date": "<due_date>"
+                                            }
+                                          },
+                                          {
+                                            "name": "asana_complete_task",
+                                            "description": "Mark a task as complete in Asana",
+                                            "arguments": {
+                                              "task_id": "<task_id>"
+                                            }
+                                          },
+                                          {
+                                            "name": "asana_list_projects",
+                                            "description": "List all projects in Asana",
+                                            "arguments": {}
+                                          },
+                                          {
+                                            "name": "asana_list_tasks",
+                                            "description": "List all tasks in a project in Asana",
+                                            "arguments": {
+                                              "project_id": "<project_id>"
+                                            }
+                                          },
+                                          {
+                                            "name": "analyze_code",
+                                            "description": "Analyze Code",
+                                            "arguments": {
+                                              "code": "<full_code_string>"
+                                            }
+                                          },
+                                          {
+                                            "name": "execute_python_file",
+                                            "description": "Execute Python File",
+                                            "arguments": {
+                                              "filename": "<filename>"
+                                            }
+                                          },
+                                          {
+                                            "name": "append_to_file",
+                                            "description": "Append to File",
+                                            "
+                                            {
+                                                "commands": [
+                                                  {
+                                                    "name": "delete_file",
+                                                    "description": "Delete File",
+                                                    "arguments": {
+                                                      "filename": "<filename>"
+                                                    }
+                                                  },
+                                                  {
+                                                    "name": "list_files",
+                                                    "description": "List Files in Directory",
+                                                    "arguments": {
+                                                      "directory": "<directory>"
+                                                    }
+                                                  },
+                                                  {
+                                                    "name": "read_file",
+                                                    "description": "Read File",
+                                                    "arguments": {
+                                                      "filename": "<filename>"
+                                                    }
+                                                  },
+                                                  {
+                                                    "name": "write_to_file",
+                                                    "description": "Write to File",
+                                                    "arguments": {
+                                                      "filename": "<filename>",
+                                                      "text": "<text>"
+                                                    }
+                                                  },
+                                                  {
+                                                    "name": "google_search",
+                                                    "description": "Perform Google Search",
+                                                    "arguments": {
+                                                      "query": "<query>"
+                                                    }
+                                                  },
+                                                  {
+                                                    "name": "improve_code",
+                                                    "description": "Improve Code",
+                                                    "arguments": {}
+                                                  },
+                                                  {
+                                                    "name": "send_tweet",
+                                                    "description": "Send Tweet",
+                                                    "arguments": {
+                                                      "tweet_text": "<tweet_text>"
+                                                    }
+                                                  },
+                                                  {
+                                                    "name": "browse_website",
+                                                    "description": "Browse Website",
+                                                    "arguments": {
+                                                      "url": "<url>",
+                                                      "question": "<what_to_find_on_website>"
+                                                    }
+                                                  },
+                                                  {
+                                                    "name": "write_tests",
+                                                    "description": "Write Tests",
+                                                    "arguments": {
+                                                      "code": "<full_code_string>",
+                                                      "focus": "<list_of_focus_areas>"
+                                                    }
+                                                  },
+                                                  {
+                                                    "name": "delete_agent",
+                                                    "description": "Delete GPT Agent",
+                                                    "arguments": {
+                                                      "key": "<key>"
+                                                    }
+                                                  },
+                                                  {
+                                                    "name": "list_agents",
+                                                    "description": "List GPT Agents",
+                                                    "arguments": {}
+                                                  },
+                                                  {
+                                                    "name": "message_agent",
+                                                    "description": "Message GPT Agent",
+                                                    "arguments": {
+                                                      "key": "<key>",
+                                                      "message": "<message>"
+                                                    }
+                                                  },
+                                                  {
+                                                    "name": "start_agent",
+                                                    "description": "Start GPT Agent",
+                                                    "arguments": {
+                                                      "name": "<name>",
+                                                      "task": "<short_task_desc>",
+                                                      "prompt": "<prompt>"
+                                                    }
+                                                  }
+                                                  [
+                                                    {
+                                                      "name": "Analyze Tax Implications",
+                                                      "command": "analyze_tax_implications",
+                                                      "steps": [
+                                                        "Gather information about the individual's financial situation and tax-related data.",
+                                                        "Analyze the tax implications of different financial decisions, such as investments or income sources.",
+                                                        "Identify potential deductions, credits, or strategies to optimize tax outcomes.",
+                                                        "Provide recommendations and guidance on minimizing tax liabilities and maximizing tax benefits."
+                                                      ]
+                                                    },
+                                                    {
+                                                      "name": "Prepare Tax Documents",
+                                                      "command": "prepare_tax_documents",
+                                                      "steps": [
+                                                        "Collect necessary financial documents, such as income statements, expense records, and investment reports.",
+                                                        "Organize and review the collected documents for accuracy and completeness.",
+                                                        "Prepare the required tax forms, ensuring proper completion and adherence to applicable tax regulations.",
+                                                        "Verify the accuracy of calculations and supporting documentation.",
+                                                        "Compile the prepared tax documents for submission or filing."
+                                                      ]
+                                                    },
+                                                    {
+                                                      "name": "Complete Tax Forms",
+                                                      "command": "complete_tax_forms",
+                                                      "steps": [
+                                                        "Retrieve the required tax forms for the specific tax year and jurisdiction.",
+                                                        "Review the instructions and guidelines for each form to understand the information required.",
+                                                        "Enter the relevant financial and personal information accurately into the tax forms.",
+                                                        "Calculate the necessary values, such as taxable income or deductions, following the provided formulas.",
+                                                        "Double-check the completed forms for errors or omissions before submission or filing."
+                                                      ]
+                                                    },
+                                                    {
+                                                      "name": "Identify Research Objectives",
+                                                      "command": "identify_research_objectives",
+                                                      "steps": [
+                                                        "Clarify the purpose and scope of the research project or inquiry.",
+                                                        "Define specific research objectives and questions to guide the investigation.",
+                                                        "Identify the relevant sources and data needed to address the research objectives.",
+                                                        "Consider any constraints, limitations, or ethical considerations that may impact the research process.",
+                                                        "Formulate a clear plan of action to achieve the desired research outcomes."
+                                                      ]
+                                                    },
+                                                    {
+                                                      "name": "Gather Market Data",
+                                                      "command": "gather_market_data",
+                                                      "steps": [
+                                                        "Determine the specific market or industry of interest for data collection.",
+                                                        "Identify and access relevant data sources, such as market reports, financial databases, or industry publications.",
+                                                        "Collect data on market trends, competitor analysis, customer behavior, or other relevant market indicators.",
+                                                        "Ensure the accuracy and reliability of the gathered market data through verification and validation.",
+                                                        "Organize and store the collected market data for further analysis and interpretation."
+                                                      ]
+                                                    },
+                                                    {
+                                                      "name": "Analyze Market Data",
+                                                      "command": "analyze_market_data",
+                                                      "steps": [
+                                                        "Clean and preprocess the collected market data to remove errors, inconsistencies, or outliers.",
+                                                        "Apply appropriate statistical or analytical techniques to extract meaningful insights from the market data.",
+                                                        "Identify patterns, trends, correlations, or anomalies in the market data.",
+                                                        "Interpret and analyze the findings in the context of the research objectives or business requirements.",
+                                                        "Summarize the key findings and present them in a clear and concise manner."
+                                                      ]
+                                                    },
+                                                    {
+                                                      "name": "Present Research Findings",
+                                                      "command": "present_research_findings",
+                                                      "steps": [
+                                                        "Organize the research findings into a logical and coherent structure.",
+                                                        "Prepare visual aids, such as charts, graphs, or infographics, to illustrate the research findings.",
+                                                        "Create a comprehensive report or presentation that effectively communicates the research methodology, data analysis, and key
+                                                  insights.",
+                                                  "Present the research findings to the intended audience, adapting the communication style and level of detail as needed.",
+                                                  "Address any questions, concerns, or feedback from the audience regarding the research findings."
+                                                  ]
+                                                  },
+                                                  {
+                                                  "name": "Schedule Meetings and Appointments",
+                                                  "command": "schedule_meetings_appointments",
+                                                  "steps": [
+                                                  "Identify the purpose and participants of the meeting or appointment.",
+                                                  "Check the availability of the participants' calendars to find suitable date and time options.",
+                                                  "Coordinate with the participants to determine their preferences and constraints.",
+                                                  "Propose and confirm the final meeting/appointment date and time.",
+                                                  "Communicate the schedule to all participants and ensure they have the necessary information."
+                                                  ]
+                                                  },
+                                                  {
+                                                  "name": "Check Calendar Availability",
+                                                  "command": "check_calendar_availability",
+                                                  "steps": [
+                                                  "Access the calendar system and retrieve the schedules of relevant individuals or resources.",
+                                                  "Review the availability of each participant for the desired date and time.",
+                                                  "Consider any existing commitments, conflicts, or constraints that may affect availability.",
+                                                  "Identify alternative date and time options if the desired slot is not available.",
+                                                  "Communicate the availability status and propose suitable options to the requester."
+                                                  ]
+                                                  },
+                                                  {
+                                                  "name": "Coordinate with Participants",
+                                                  "command": "coordinate_with_participants",
+                                                  "steps": [
+                                                  "Initiate communication with the participants to discuss the purpose, agenda, and logistics of the meeting or appointment.",
+                                                  "Collect preferences, constraints, or specific requirements from the participants.",
+                                                  "Facilitate collaborative decision-making and consensus-building among the participants.",
+                                                  "Ensure clear and effective communication channels are established for ongoing coordination.",
+                                                  "Address any conflicts, challenges, or issues that may arise during the coordination process."
+                                                  ]
+                                                  },
+                                                  {
+                                                  "name": "Set Meeting Date and Time",
+                                                  "command": "set_meeting_date_time",
+                                                  "args": {
+                                                  "date": "<date>",
+                                                  "time": "<time>"
+                                                  },
+                                                  "steps": [
+                                                  "Confirm the agreed-upon meeting/appointment date and time with all participants.",
+                                                  "Update the calendar or scheduling system with the finalized date and time information.",
+                                                  "Send out meeting invitations or notifications to all participants, including the date, time, location, and any relevant details.",
+                                                  "Ensure participants have the necessary information and can add the event to their calendars."
+                                                  ]
+                                                  },
+                                                  {
+                                                  "name": "Send Meeting Invitations",
+                                                  "command": "send_meeting_invitations",
+                                                  "steps": [
+                                                  "Create a meeting invitation or notification with all the relevant details, including the date, time, location, agenda, and participants.",
+                                                  "Send the meeting invitations to the intended participants using their preferred communication channels, such as email or calendar invites.",
+                                                  "Include any necessary attachments or reference materials related to the meeting agenda or discussion topics.",
+                                                  "Monitor and track the responses or confirmations from the participants.",
+                                                  "Follow up with any participants who have not responded or require additional information."
+                                                  ]
+                                                  },
+                                                  {
+                                                  "name": "Update Calendar",
+                                                  "command": "update_calendar",
+                                                  "steps": [
+                                                  "Access the calendar system and navigate to the appropriate date and time.",
+                                                  "Make the necessary changes or additions to the calendar, such as creating new events, modifying existing events, or rescheduling appointments.",
+                                                  "Ensure the accuracy and completeness of the updated calendar information.",
+                                                  "Sync the updated calendar across devices or platforms to maintain consistency.",
+                                                  "Verify the visibility and accessibility of the updated calendar information to relevant individuals or teams."
+                                                  ]
+                                                  },
+                                                  {
+                                                  "name": "Manage Calendars and Reminders",
+                                                  
+                                                  "command": "manage_calendars_reminders",
+                                                  "steps": [
+                                                  "Organize and categorize calendar events, appointments, or meetings into relevant calendars or folders.",
+                                                  "Set up reminders or notifications for upcoming events to ensure timely preparation and attendance.",
+                                                  "Configure reminder preferences, such as notification methods, timing, or frequency.",
+                                                  "Monitor and review the calendar regularly to stay informed about upcoming events or changes.",
+                                                  "Make adjustments or modifications to the calendar or reminder settings as needed."
+                                                  ]
+                                                  },
+                                                  {
+                                                  "name": "Add Event to Calendar",
+                                                  "command": "add_event_to_calendar",
+                                                  "args": {
+                                                  "event_details": "<event_details>"
+                                                  },
+                                                  "steps": [
+                                                  "Retrieve the relevant event details, such as the date, time, location, agenda, or participants.",
+                                                  "Access the calendar system and navigate to the appropriate date and time.",
+                                                  "Create a new event in the calendar and input the event details, ensuring accuracy and completeness.",
+                                                  "Include any necessary attachments, notes, or reference materials related to the event.",
+                                                  "Save the event to the calendar and verify its visibility and accessibility."
+                                                  ]
+                                                  },
+                                                  {
+                                                  "name": "Set Reminders",
+                                                  "command": "set_reminders",
+                                                  "args": {
+                                                  "reminder_time": "<reminder_time>"
+                                                  },
+                                                  "steps": [
+                                                  "Identify the events or activities for which reminders are required.",
+                                                  "Access the calendar or reminder system and locate the relevant events.",
+                                                  "Configure the reminder settings, such as the timing, frequency, and notification method.",
+                                                  "Set the reminders for the specified events or activities to ensure timely notification.",
+                                                  "Test the reminders to verify their functionality and adjust settings if necessary."
+                                                  ]
+                                                  },
+                                                  {
+                                                  "name": "Update Event Details",
+                                                  "command": "update_event_details",
+                                                  "args": {
+                                                  "event_id": "<event_id>",
+                                                  "new_details": "<new_details>"
+                                                  },
+                                                  "steps": [
+                                                  "Retrieve the event with the specified event ID from the calendar system.",
+                                                  "Review the current event details and identify the required updates or modifications.",
+                                                  "Make the necessary changes or additions to the event details, such as the date, time, location, agenda, or participants.",
+                                                  "Verify the accuracy and completeness of the updated event details.",
+                                                  "Save the changes and update the event in the calendar, ensuring visibility to relevant individuals."
+                                                  ]
+                                                  },
+                                                  {
+                                                  "name": "Sync Calendars across Devices",
+                                                  "command": "sync_calendars_devices",
+                                                  "steps": [
+                                                  "Identify the devices or platforms that need to be synchronized.",
+                                                  "Access the calendar synchronization settings or applications on each device or platform.",
+                                                  "Enable calendar synchronization and configure the settings to ensure consistent data across devices.",
+                                                  "Initiate the synchronization process and verify the successful transfer of calendar information.",
+                                                  "Monitor the synchronization periodically to detect and resolve any synchronization issues or conflicts."
+                                                  ]
+                                                  },
+                                                  {
+                                                  "name": "Share Calendars",
+                                                  "command": "share_calendars",
+                                                  "args": {
+                                                  "users": "<users>"
+                                                  },
+                                                  "steps": [
+                                                  "Access the calendar sharing settings or options in the calendar system.",
+                                                  "Identify the users or individuals with whom the calendar needs to be shared.",
+                                                  "Specify the sharing permissions, levels of access, or visibility for each user or group.",
+                                                  "Send the calendar sharing invitations or notifications to the intended users.",
+                                                  "Monitor and manage the calendar sharing permissions, making adjustments as needed."
+                                                  ]
+                                                  },
+                                                  {
+                                                  "name": "Send and Reply to Emails",
+                                                  "command": "send_reply_emails",
+                                                  "steps": [
+                                                  "Compose a new
+                                                  
+                                                  email message or retrieve the incoming email message for a reply.",
+                                                  "Review and edit the email content, including the recipient(s), subject, and body.",
+                                                  "Attach any necessary files or documents to the email if required.",
+                                                  "Send the email to the designated recipient(s) using the preferred email communication method.",
+                                                  "Monitor and manage email responses, including replying to incoming emails in a timely manner."
+                                                  ]
+                                                  },
+                                                  {
+                                                  "name": "Compose and Send Email",
+                                                  "command": "compose_send_email",
+                                                  "args": {
+                                                  "recipient": "<recipient>",
+                                                  "subject": "<subject>",
+                                                  "body": "<body>"
+                                                  },
+                                                  "steps": [
+                                                  "Access the email composition or email client interface.",
+                                                  "Enter the recipient's email address or addresses in the designated field(s), ensuring accuracy.",
+                                                  "Compose the email subject line, providing a concise and descriptive summary of the email content.",
+                                                  "Craft the email body, including the main message, additional information, or requested actions.",
+                                                  "Attach any necessary files, documents, or reference materials to the email if applicable.",
+                                                  "Review the composed email for clarity, correctness, and appropriate tone before sending.",
+                                                  "Send the email and verify its successful delivery to the intended recipient(s)."
+                                                  ]
+                                                  },
+                                                  {
+                                                  "name": "Reply to Email",
+                                                  "command": "reply_to_email",
+                                                  "args": {
+                                                  "email_id": "<email_id>",
+                                                  "reply": "<reply>"
+                                                  },
+                                                  "steps": [
+                                                  "Retrieve the incoming email with the specified email ID.",
+                                                  "Review the content and context of the received email for understanding.",
+                                                  "Compose the reply to the email, addressing the sender's queries, comments, or concerns.",
+                                                  "Ensure the reply is concise, relevant, and effectively communicates the intended message.",
+                                                  "Attach any necessary files, documents, or additional information to the reply if required.",
+                                                  "Review the composed reply for clarity, correctness, and appropriate tone before sending.",
+                                                  "Send the reply email and verify its successful delivery to the original sender."
+                                                  ]
+                                                  },
+                                                  {
+                                                  "name": "Format Email Content",
+                                                  "command": "format_email_content",
+                                                  "args": {
+                                                  "email_id": "<email_id>",
+                                                  "formatting": "<formatting>"
+                                                  },
+                                                  "steps": [
+                                                  "Retrieve the specified email with the provided email ID.",
+                                                  "Review the existing email content and determine the formatting requirements.",
+                                                  "Apply the specified formatting, such as font styles, colors, indentation, or alignment, to the email content.",
+                                                  "Ensure consistency and readability of the formatted email content.",
+                                                  "Preview the formatted email to verify the desired appearance and readability.",
+                                                  "Send the formatted email and confirm its proper display to the recipient(s)."
+                                                  ]
+                                                  },
+                                                  {
+                                                  "name": "Add Attachments to Email",
+                                                  "command": "add_attachments_email",
+                                                  "args": {
+                                                  "email_id": "<email_id>",
+                                                  "attachments": "<attachments>"
+                                                  },
+                                                  "steps": [
+                                                  "Retrieve the specified email with the provided email ID.",
+                                                  "Review the existing email content and determine the attachments to be added.",
+                                                  "Locate the necessary files or documents to be attached to the email.",
+                                                  "Attach the identified files or documents to the email, ensuring accuracy and completeness.",
+                                                  "Verify the successful attachment of the files or documents to the email.",
+                                                  "Send the email with attachments and confirm their accessibility to the recipient(s)."
+                                                  ]
+                                                  },
+                                                  {
+                                                  "name": "Manage Email Folders and Labels",
+                                                  "command": "manage_email_folders_labels",
+                                                  "steps": [
+                                                  "Access the email management interface or application.",
+                                                  "Create new folders or labels
+                                                  
+                                                  to categorize emails based on specific criteria or topics.",
+                                                  "Organize emails by moving them into appropriate folders or applying relevant labels.",
+                                                  "Review and update folder or label assignments as needed to maintain organization.",
+                                                  "Search and retrieve emails efficiently using folders, labels, or search filters."
+                                                  ]
+                                                  },
+                                                  {
+                                                  "name": "Make Phone Calls and Handle Correspondence",
+                                                  "command": "make_calls_handle_correspondence",
+                                                  "steps": [
+                                                  "Initiate phone calls or handle incoming calls based on the context or requirement.",
+                                                  "Prepare for outgoing calls by reviewing relevant information or materials related to the call.",
+                                                  "Answer incoming calls promptly and professionally, addressing the caller's inquiries or concerns.",
+                                                  "Engage in effective communication during phone calls, actively listening and providing clear responses.",
+                                                  "Handle correspondence documents, such as emails or physical letters, in a timely and professional manner."
+                                                  ]
+                                                  },
+                                                  {
+                                                  "name": "Initiate Outgoing Call",
+                                                  "command": "initiate_outgoing_call",
+                                                  "args": {
+                                                  "recipient": "<recipient>"
+                                                  },
+                                                  "steps": [
+                                                  "Retrieve the contact information of the intended recipient, including their phone number.",
+                                                  "Dial the recipient's phone number using the preferred communication device.",
+                                                  "Introduce yourself and state the purpose or context of the call to the recipient.",
+                                                  "Engage in a conversation or discussion with the recipient, actively listening and providing relevant information.",
+                                                  "Conclude the call politely and professionally, summarizing any action items or next steps if necessary."
+                                                  ]
+                                                  },
+                                                  {
+                                                  "name": "Answer Incoming Call",
+                                                  "command": "answer_incoming_call",
+                                                  "args": {
+                                                  "call_id": "<call_id>"
+                                                  },
+                                                  "steps": [
+                                                  "Receive an incoming call on the designated communication device.",
+                                                  "Check the caller ID or information to identify the origin and purpose of the call.",
+                                                  "Answer the call promptly and greet the caller in a professional and courteous manner.",
+                                                  "Listen attentively to the caller's inquiries, comments, or concerns.",
+                                                  "Provide appropriate responses, information, or assistance based on the nature of the call.",
+                                                  "Conclude the call politely, ensuring the caller's questions or needs are adequately addressed."
+                                                  ]
+                                                  },
+                                                  {
+                                                  "name": "Return Missed Call",
+                                                  "command": "return_missed_call",
+                                                  "args": {
+                                                  "call_id": "<call_id>"
+                                                  },
+                                                  "steps": [
+                                                  "Receive a missed call notification or identify a missed call in the call history.",
+                                                  "Retrieve the caller's contact information, such as the phone number or caller ID.",
+                                                  "Initiate a return call to the caller using the provided contact information.",
+                                                  "Introduce yourself and acknowledge the missed call in the conversation.",
+                                                  "Address the caller's inquiries, comments, or concerns based on the call context.",
+                                                  "Conclude the call politely, summarizing any follow-up actions or next steps if necessary."
+                                                  ]
+                                                  },
+                                                  {
+                                                  "name": "Draft and Send Correspondence",
+                                                  "command": "draft_send_correspondence",
+                                                  "args": {
+                                                  "recipient": "<recipient>",
+                                                  "correspondence_type": "<correspondence_type>",
+                                                  "content": "<content>"
+                                                  },
+                                                  "steps": [
+                                                  "Identify the recipient or intended audience for the correspondence.",
+                                                  "Select the appropriate type of correspondence, such as an email, letter, or memo.",
+                                                  "Draft the correspondence content, ensuring clarity, conciseness, and professionalism.",
+                                                  "Include the necessary details, information, or instructions relevant to the correspondence purpose.",
+                                                  "Review the drafted correspondence for accuracy, grammar, and adherence to the desired format.",
+                                                  
+                                                  "Send the correspondence to the designated recipient using the preferred communication method.",
+                                                  "Maintain records or copies of the sent correspondence for future reference or documentation purposes."
+                                                  ]
+                                                  },
+                                                  {
+                                                  "name": "Manage and File Incoming Correspondence",
+                                                  "command": "manage_file_incoming_correspondence",
+                                                  "steps": [
+                                                  "Receive incoming correspondence, such as emails, letters, or documents.",
+                                                  "Review and process the incoming correspondence promptly and efficiently.",
+                                                  "Categorize and organize the correspondence based on their nature or purpose.",
+                                                  "Maintain proper documentation or records of the incoming correspondence for reference.",
+                                                  "File the correspondence in the appropriate folders, according to established filing systems or protocols.",
+                                                  "Ensure the confidentiality and security of sensitive or confidential correspondence."
+                                                  ]
+                                                  },
+                                                  {
+                                                  "name": "Conduct Research on Various Topics",
+                                                  "command": "conduct_research_various_topics",
+                                                  "steps": [
+                                                  "Identify the research topic or question to be investigated.",
+                                                  "Determine the scope and objectives of the research project.",
+                                                  "Develop a research plan or methodology to guide the investigation.",
+                                                  "Gather information from reliable sources, such as academic journals, databases, or credible websites.",
+                                                  "Evaluate and analyze the collected information to derive meaningful insights.",
+                                                  "Synthesize and present the research findings in a clear and organized manner.",
+                                                  "Ensure proper citation and referencing of sources used during the research process."
+                                                  ]
+                                                  },
+                                                  {
+                                                  "name": "Gather Information from Sources",
+                                                  "command": "gather_information_sources",
+                                                  "args": {
+                                                  "sources": "<sources>"
+                                                  },
+                                                  "steps": [
+                                                  "Identify the specific sources or references from which information needs to be gathered.",
+                                                  "Access the identified sources, such as databases, websites, books, or articles.",
+                                                  "Retrieve the relevant information or data from each source.",
+                                                  "Ensure the accuracy and reliability of the gathered information through verification and cross-referencing.",
+                                                  "Record or document the gathered information for further analysis or reference."
+                                                  ]
+                                                  },
+                                                  {
+                                                  "name": "Perform Online Research",
+                                                  "command": "perform_online_research",
+                                                  "args": {
+                                                  "keywords": "<keywords>"
+                                                  },
+                                                  "steps": [
+                                                  "Identify the research keywords or search terms related to the research topic.",
+                                                  "Access online search engines, databases, or academic resources.",
+                                                  "Enter the identified keywords into the search interface.",
+                                                  "Review and evaluate the search results for relevance and reliability.",
+                                                  "Select and retrieve the desired online resources or articles for further analysis.",
+                                                  "Cite and document the online resources used during the research process."
+                                                  ]
+                                                  },
+                                                  {
+                                                  "name": "Compile Research Findings",
+                                                  "command": "compile_research_findings",
+                                                  "steps": [
+                                                  "Review and analyze the gathered research data or information.",
+                                                  "Identify common themes, patterns, or trends among the research findings.",
+                                                  "Organize and categorize the research findings into meaningful groups or sections.",
+                                                  "Ensure the accuracy and consistency of the compiled research findings.",
+                                                  "Summarize the key points or insights derived from the research findings.",
+                                                  "Prepare the compiled research findings for presentation or further analysis."
+                                                  ]
+                                                  },
+                                                  {
+                                                  "name": "Summarize and Organize Research Data",
+                                                  "command": "summarize_organize_research_data",
+                                                  "steps": [
+                                                  "Review the collected research data or information.",
+                                                  "Identify the key points, findings, or outcomes within the research data.",
+                                                  "Summarize the research data in a concise and informative manner.",
+                                                  "Organize the summarized research data into logical sections or categories.",
+                                                  "Ensure the clarity and coherence
+                                                  
+                                                  of the organized research data.",
+                                                  "Create visual aids, such as charts, graphs, or tables, to enhance the presentation or understanding of the research data."
+                                                  ]
+                                                  },
+                                                  {
+                                                  "name": "Provide References and Citations",
+                                                  "command": "provide_references_citations",
+                                                  "steps": [
+                                                  "Identify the sources or references used during the research process.",
+                                                  "Follow the appropriate referencing style or guidelines, such as APA, MLA, or Chicago style.",
+                                                  "Include in-text citations or footnotes to acknowledge and attribute specific information or ideas to their original sources.",
+                                                  "Create a reference list or bibliography that provides full details of the sources used.",
+                                                  "Ensure the accuracy and completeness of the references and citations.",
+                                                  "Review and proofread the references and citations for consistency and adherence to the selected referencing style."
+                                                  ]
+                                                  },
+                                                  {
+                                                  "name": "Provide Travel Arrangements and Itinerary Planning",
+                                                  "command": "provide_travel_arrangements_itinerary_planning",
+                                                  "steps": [
+                                                  "Gather travel details from the traveler, such as destination, duration, and preferences.",
+                                                  "Research and compare travel options, including flights, accommodations, and transportation.",
+                                                  "Book flights, accommodations, and transportation based on the traveler's preferences and budget.",
+                                                  "Create a comprehensive travel itinerary, including dates, times, locations, and activities.",
+                                                  "Coordinate travel logistics, such as transfers, reservations, or visa requirements.",
+                                                  "Assist with visa and documentation requirements, providing guidance and support to the traveler."
+                                                  ]
+                                                  },
+                                                  {
+                                                  "name": "Book Flights, Accommodations, and Transportation",
+                                                  "command": "book_flights_accommodations_transportation",
+                                                  "steps": [
+                                                  "Research and compare flight options based on the traveler's preferences, budget, and schedule.",
+                                                  "Select the appropriate flights, considering factors such as price, duration, and layovers.",
+                                                  "Book the chosen flights, ensuring accuracy in passenger details and travel dates.",
+                                                  "Research and compare accommodation options, such as hotels, resorts, or vacation rentals.",
+                                                  "Select and book the desired accommodations, considering factors such as location, amenities, and reviews.",
+                                                  "Arrange transportation options, such as car rentals, airport transfers, or public transportation passes."
+                                                  ]
+                                                  },
+                                                  {
+                                                  "name": "Research and Compare Travel Options",
+                                                  "command": "research_compare_travel_options",
+                                                  "steps": [
+                                                  "Identify the specific travel options to be researched, such as flights, accommodations, or transportation.",
+                                                  "Access reliable travel websites, platforms, or agencies to gather information on available options.",
+                                                  "Compare the features, prices, and reviews of different travel options.",
+                                                  "Consider factors such as location, amenities, ratings, and user experiences in the comparison process.",
+                                                  "Document the findings and make notes on the advantages and disadvantages of each option.",
+                                                  "Present the research findings and recommendations to the traveler for decision-making."
+                                                  ]
+                                                  },
+                                                  {
+                                                  "name": "Create Travel Itineraries",
+                                                  "command": "create_travel_itineraries",
+                                                  "steps": [
+                                                  "Gather the necessary travel details, including dates, locations, and activities.",
+                                                  "Organize the travel details in a logical sequence, ensuring coherence and readability.",
+                                                  "Include specific information such as flight details, accommodations, transportation, and scheduled activities.",
+                                                  "Allocate sufficient time for each activity and consider travel time between locations.",
+                                                  "Provide additional information or recommendations for attractions, dining, or local services.",
+                                                  "Present the travel itinerary to the traveler for review and feedback."
+                                                  ]
+                                                  },
+                                                  {
+                                                  "name": "Coordinate Travel Logistics",
+                                                  "command": "coordinate_travel_logistics",
+                                                  "steps": [
+                                                  
+                                                  "Review the travel details and requirements, such as flight schedules, accommodation bookings, and transportation arrangements.",
+                                                  "Contact the relevant service providers, such as airlines, hotels, or car rental agencies, to confirm reservations and details.",
+                                                  "Ensure the alignment of travel logistics, such as coordinating flight arrival and departure times with accommodation check-in and check-out.",
+                                                  "Communicate any special requests or preferences to the service providers to accommodate the traveler's needs.",
+                                                  "Provide the traveler with a comprehensive overview of the coordinated travel logistics and confirm their understanding and agreement.",
+                                                  "Monitor the travel logistics throughout the journey, addressing any issues or changes that may arise."
+                                                  ]
+                                                  },
+                                                  {
+                                                  "name": "Assist with Visa and Documentation Requirements",
+                                                  "command": "assist_visa_documentation_requirements",
+                                                  "steps": [
+                                                  "Gather information about the traveler's destination and the specific visa requirements.",
+                                                  "Provide guidance on the visa application process, including the necessary documents, forms, and fees.",
+                                                  "Assist the traveler in completing the visa application accurately and thoroughly.",
+                                                  "Ensure all required supporting documents, such as passport copies or financial statements, are included.",
+                                                  "Submit the visa application on behalf of the traveler or guide them through the submission process.",
+                                                  "Monitor the visa application status and provide updates to the traveler."
+                                                  ]
+                                                  },
+                                                  {
+                                                  "name": "Organize and Maintain Files and Documents",
+                                                  "command": "organize_maintain_files_documents",
+                                                  "steps": [
+                                                  "Establish a logical file and folder structure to organize files and documents.",
+                                                  "Create main folders based on broad categories or topics.",
+                                                  "Create subfolders within each main folder for more specific organization.",
+                                                  "Sort and categorize documents based on their content, purpose, or date.",
+                                                  "Rename files with clear and descriptive names to improve accessibility and searchability.",
+                                                  "Regularly review and update the file and folder structure as needed.",
+                                                  "Ensure backups or duplicates of important files and documents for data security and redundancy."
+                                                  ]
+                                                  },
+                                                  {
+                                                  "name": "Create File and Folder Structures",
+                                                  "command": "create_file_folder_structures",
+                                                  "steps": [
+                                                  "Identify the categories or topics to be represented in the file and folder structure.",
+                                                  "Determine the main folders that will serve as high-level categories.",
+                                                  "Create the main folders in the designated file storage system or application.",
+                                                  "Establish subfolders within each main folder to further organize files.",
+                                                  "Assign clear and descriptive names to the main folders and subfolders.",
+                                                  "Ensure the file and folder structure is intuitive, logical, and scalable.",
+                                                  "Organize existing files into the appropriate folders based on their content or purpose."
+                                                  ]
+                                                  },
+                                                  {
+                                                  "name": "Sort and Categorize Documents",
+                                                  "command": "sort_categorize_documents",
+                                                  "steps": [
+                                                  "Review the documents to be sorted and categorized.",
+                                                  "Identify common attributes, characteristics, or themes among the documents.",
+                                                  "Determine the categories or criteria for sorting and categorization.",
+                                                  "Assign each document to the appropriate category or subcategory based on the identified criteria.",
+                                                  "Organize the documents within each category in a logical order, such as alphabetical or chronological.",
+                                                  "Create clear labels or markers to indicate the document categories or classifications.",
+                                                  "Regularly review and update the sorting and categorization system as new documents are added."
+                                                  ]
+                                                  },
+                                                  {
+                                                  "name": "Rename and Organize Files",
+                                                  "command": "rename_organize_files",
+                                                  "steps": [
+                                                  "Review the existing file names to identify any inconsistencies, redundancies, or unclear labels.",
+                                                  "Develop a consistent naming convention or format for the files, considering factors
+                                                  
+                                                  such as date, project, or content.",
+                                                  "Rename the files based on the established naming convention, ensuring clarity and uniqueness.",
+                                                  "Organize the renamed files into appropriate folders or subfolders based on their content or purpose.",
+                                                  "Update any references or links to the renamed files to maintain accessibility and accuracy.",
+                                                  "Ensure the files are properly sorted and labeled within the file organization system.",
+                                                  "Regularly review and maintain the file organization to accommodate new files and changes."
+                                                  ]
+                                                  },
+                                                  {
+                                                  "name": "Ensure Proper Filing and Indexing",
+                                                  "command": "ensure_proper_filing_indexing",
+                                                  "steps": [
+                                                  "Review the existing filing system to ensure its efficiency and usability.",
+                                                  "Determine the appropriate file organization method, such as alphabetical, numerical, or chronological.",
+                                                  "Assign clear and descriptive labels to the file folders to facilitate easy identification and retrieval.",
+                                                  "Establish an indexing system or record-keeping mechanism to track and locate specific files.",
+                                                  "Create an index or database that lists key information about each file, such as file name, location, and contents.",
+                                                  "Regularly update the filing system and index as new files are added or changes occur.",
+                                                  "Conduct periodic audits or reviews to ensure the filing system is maintained properly and remains effective."
+                                                  ]
+                                                  },
+                                                  {
+                                                  "name": "Implement Document Version Control",
+                                                  "command": "implement_document_version_control",
+                                                  "steps": [
+                                                  "Establish a naming convention or file naming format that incorporates version numbers or identifiers.",
+                                                  "Assign a unique version number or identifier to each document version.",
+                                                  "Maintain a record or log that tracks the version history of each document.",
+                                                  "Clearly indicate the document version within the file itself, such as in the header or footer.",
+                                                  "Implement a system or process to track and manage document revisions and updates.",
+                                                  "Ensure all stakeholders or collaborators are aware of the document version control process and adhere to it.",
+                                                  "Regularly review and update the document version control system to maintain accuracy and consistency."
+                                                  ]
+                                                  },
+                                                  {
+                                                  "name": "Collect Financial Data",
+                                                  "command": "collect_financial_data",
+                                                  "args": {
+                                                  "data_source": "<data_source>",
+                                                  "criteria": "<criteria>"
+                                                  },
+                                                  "steps": [
+                                                  "Identify the specific financial data required for analysis or reporting.",
+                                                  "Access the designated data source, such as financial statements, databases, or online platforms.",
+                                                  "Retrieve the relevant financial data based on the specified criteria or filters.",
+                                                  "Ensure the accuracy and completeness of the collected financial data.",
+                                                  "Organize and store the financial data in a structured and accessible format.",
+                                                  "Verify the data integrity and reconcile any discrepancies or inconsistencies.",
+                                                  "Maintain proper documentation or records of the collected financial data for future reference or audits."
+                                                  ]
+                                                  },
+                                                  {
+                                                  "name": "Calculate Income",
+                                                  "command": "calculate_income",
+                                                  "args": {
+                                                  "income_type": "<income_type>"
+                                                  },
+                                                  "steps": [
+                                                  "Identify the income type or category for calculation, such as salary, investments, or rental income.",
+                                                  "Gather the necessary financial data or documents related to the income.",
+                                                  "Apply the appropriate calculation method or formula to determine the income amount.",
+                                                  "Ensure accuracy and consistency in the calculation process.",
+                                                  "Record the calculated income amount in the appropriate financial records or reports.",
+                                                  "Review and verify the income calculation for accuracy and completeness."
+                                                  ]
+                                                  },
+                                                  {
+                                                  "name": "Calculate Expenses",
+                                                  "command": "calculate_expenses",
+                                                  "args": {
+                                                  "expense_type": "<expense_type>"
+                                                  },
+                                                  "steps": [
+                                                  "Identify the expense type or category
+                                                  
+                                                  for calculation, such as utilities, rent, or travel expenses.",
+                                                  "Gather the necessary financial data or documents related to the expenses.",
+                                                  "Apply the appropriate calculation method or formula to determine the total expense amount.",
+                                                  "Ensure accuracy and consistency in the calculation process.",
+                                                  "Record the calculated expense amount in the appropriate financial records or reports.",
+                                                  "Review and verify the expense calculation for accuracy and completeness."
+                                                  ]
+                                                  },
+                                                  {
+                                                  "name": "Calculate Net Profit",
+                                                  "command": "calculate_net_profit",
+                                                  "steps": [
+                                                  "Gather the financial data for calculating the net profit, including income and expenses.",
+                                                  "Calculate the total income by summing up all income sources.",
+                                                  "Calculate the total expenses by summing up all expense categories.",
+                                                  "Subtract the total expenses from the total income to obtain the net profit.",
+                                                  "Ensure accuracy and consistency in the calculation process.",
+                                                  "Record the net profit amount in the appropriate financial records or reports.",
+                                                  "Review and verify the net profit calculation for accuracy and completeness."
+                                                  ]
+                                                  },
+                                                  {
+                                                  "name": "Generate Reports",
+                                                  "command": "generate_reports",
+                                                  "args": {
+                                                  "report_type": "<report_type>"
+                                                  },
+                                                  "steps": [
+                                                  "Identify the specific report type or format required, such as financial statements, balance sheets, or income statements.",
+                                                  "Gather the relevant financial data or information for the report.",
+                                                  "Organize and structure the financial data according to the report requirements.",
+                                                  "Apply the appropriate calculations or analysis to derive the required metrics or insights.",
+                                                  "Create the report layout or template, including headers, sections, and formatting.",
+                                                  "Present the financial data and analysis in a clear and understandable format.",
+                                                  "Review and proofread the generated report for accuracy, consistency, and adherence to the report type or format."
+                                                  ]
+                                                  },
+                                                  {
+                                                  "name": "Gather Market Information",
+                                                  "command": "gather_market_information",
+                                                  "args": {
+                                                  "market_type": "<market_type>"
+                                                  },
+                                                  "steps": [
+                                                  "Identify the specific market type or sector for gathering information, such as stock market, real estate market, or consumer market.",
+                                                  "Access reliable sources of market information, such as financial news, industry reports, or market research databases.",
+                                                  "Collect relevant data and information about market trends, performance, competitors, or consumer behavior.",
+                                                  "Ensure the accuracy and reliability of the gathered market information through verification and cross-referencing.",
+                                                  "Organize and store the market information in a structured and accessible format.",
+                                                  "Analyze and interpret the gathered market information to identify patterns, opportunities, or risks.",
+                                                  "Document the findings and insights derived from the gathered market information for future reference or decision-making."
+                                                  ]
+                                                  },
+                                                  {
+                                                  "name": "Analyze Risk and Return",
+                                                  "command": "analyze_risk_and_return",
+                                                  "args": {
+                                                  "investment_type": "<investment_type>"
+                                                  },
+                                                  "steps": [
+                                                  "Gather relevant financial data or information about the investment type or market.",
+                                                  "Identify and assess the potential risks associated with the investment, such as market volatility, regulatory changes, or economic factors.",
+                                                  "Evaluate the potential return or profitability of the investment based on historical data, market analysis, or financial projections.",
+                                                  "Calculate or estimate key financial metrics, such as return on investment (ROI), risk-adjusted return, or expected return.",
+                                                  "Analyze the risk and return relationship to determine the risk-reward tradeoff of the investment.",
+                                                  "Present the risk and return analysis in a clear and understandable format, highlighting the key findings or insights.",
+                                                  "Provide recommendations or suggestions based on the risk and return analysis,
+                                                  
+                                                  considering the investor's objectives and risk tolerance."
+                                                  ]
+                                                  },
+                                                  {
+                                                  "name": "Identify Investment Goals",
+                                                  "command": "identify_investment_goals",
+                                                  "args": {
+                                                  "investment_profile": "<investment_profile>"
+                                                  },
+                                                  "steps": [
+                                                  "Gather information about the investor's financial situation, investment objectives, time horizon, and risk tolerance.",
+                                                  "Conduct a thorough assessment of the investor's risk tolerance and risk capacity.",
+                                                  "Evaluate the investor's goals and preferences, such as capital appreciation, income generation, or wealth preservation.",
+                                                  "Consider the investor's investment profile, including their knowledge, experience, and investment constraints.",
+                                                  "Identify and define specific investment goals and targets based on the investor's profile and preferences.",
+                                                  "Document the identified investment goals for future reference and alignment with investment strategies."
+                                                  ]
+                                                  },
+                                                  {
+                                                  "name": "Recommend Asset Allocation",
+                                                  "command": "recommend_asset_allocation",
+                                                  "args": {
+                                                  "risk_tolerance": "<risk_tolerance>",
+                                                  "investment_horizon": "<investment_horizon>"
+                                                  },
+                                                  "steps": [
+                                                  "Assess the investor's risk tolerance and investment horizon.",
+                                                  "Evaluate the investor's investment goals and objectives.",
+                                                  "Analyze the investor's financial situation, including income, assets, and liabilities.",
+                                                  "Consider the investor's risk capacity and investment constraints.",
+                                                  "Determine the optimal asset allocation mix based on the investor's risk tolerance, investment horizon, and goals.",
+                                                  "Present the recommended asset allocation strategy, including the recommended percentages for different asset classes.",
+                                                  "Provide explanations and justifications for the recommended asset allocation, considering factors such as historical performance, diversification benefits, and risk-return tradeoffs."
+                                                  ]
+                                                  },
+                                                  {
+                                                  "name": "Review Portfolio",
+                                                  "command": "review_portfolio",
+                                                  "args": {
+                                                  "portfolio_name": "<portfolio_name>"
+                                                  },
+                                                  "steps": [
+                                                  "Gather the relevant financial data or information about the portfolio, including asset holdings, investment performance, and risk metrics.",
+                                                  "Assess the portfolio's performance against the investor's objectives and benchmarks.",
+                                                  "Evaluate the portfolio's asset allocation and diversification.",
+                                                  "Analyze the individual investments within the portfolio for their performance, risk characteristics, and alignment with the investment goals.",
+                                                  "Identify any areas of improvement or potential changes in the portfolio composition.",
+                                                  "Provide recommendations or suggestions for optimizing the portfolio based on the review and analysis.",
+                                                  "Document the findings and recommendations for future reference and tracking of portfolio performance."
+                                                  ]
+                                                  },
+                                                  {
+                                                  "name": "Calculate ROI",
+                                                  "command": "calculate_roi",
+                                                  "args": {
+                                                  "investment_name": "<investment_name>"
+                                                  },
+                                                  "steps": [
+                                                  "Gather the necessary financial data or information related to the investment.",
+                                                  "Identify the initial investment amount or cost basis.",
+                                                  "Determine the final investment value or proceeds.",
+                                                  "Calculate the gain or loss by subtracting the initial investment amount from the final investment value.",
+                                                  "Calculate the return on investment (ROI) by dividing the gain or loss by the initial investment amount and expressing it as a percentage.",
+                                                  "Ensure accuracy and consistency in the calculation process.",
+                                                  "Record the calculated ROI in the appropriate financial records or reports.",
+                                                  "Review and verify the ROI calculation for accuracy and completeness."
+                                                  ]
+                                                  },
+                                                  {
+                                                  "name": "Calculate Profit Margin",
+                                                  "command": "calculate_profit_margin",
+                                                  "steps": [
+                                                  "Gather the financial data or information related to revenue and expenses.",
+                                                  "Calculate the net profit by subtracting the total expenses from the total revenue.",
+                                                  "Calculate the profit margin by dividing the net profit by the total revenue and expressing it
+                                                  
+                                                  as a percentage.",
+                                                  "Ensure accuracy and consistency in the calculation process.",
+                                                  "Record the calculated profit margin in the appropriate financial records or reports.",
+                                                  "Review and verify the profit margin calculation for accuracy and completeness."
+                                                  ]
+                                                  },
+                                                  {
+                                                  "name": "Track Cash Flow",
+                                                  "command": "track_cash_flow",
+                                                  "steps": [
+                                                  "Gather the financial data or information related to income and expenses.",
+                                                  "Record the income amounts and sources, including salaries, investments, or rental income.",
+                                                  "Record the expense amounts and categories, including utilities, rent, or groceries.",
+                                                  "Update the cash flow record regularly, ensuring accuracy and completeness.",
+                                                  "Analyze the cash flow to identify patterns, trends, or areas of improvement.",
+                                                  "Make adjustments or changes in spending or income generation based on the cash flow analysis.",
+                                                  "Use cash flow tracking tools or software for easier monitoring and analysis.",
+                                                  "Review and reconcile the cash flow records with bank statements or financial accounts."
+                                                  ]
+                                                  },
+                                                  {
+                                                  "name": "Calculate Debt-to-Equity Ratio",
+                                                  "command": "calculate_debt_to_equity_ratio",
+                                                  "steps": [
+                                                  "Gather the financial data or information related to debt and equity.",
+                                                  "Identify the total debt amount, including loans, mortgages, or credit card balances.",
+                                                  "Identify the total equity amount, including shareholder equity or owner's equity.",
+                                                  "Calculate the debt-to-equity ratio by dividing the total debt by the total equity.",
+                                                  "Ensure accuracy and consistency in the calculation process.",
+                                                  "Record the calculated debt-to-equity ratio in the appropriate financial records or reports.",
+                                                  "Review and verify the debt-to-equity ratio calculation for accuracy and completeness."
+                                                  ]
+                                                  },
+                                                  {
+                                                  "name": "Assess Financial Goals",
+                                                  "command": "assess_financial_goals",
+                                                  "steps": [
+                                                  "Review the investor's financial goals and objectives.",
+                                                  "Evaluate the progress or achievement of each financial goal.",
+                                                  "Consider the timeline, priority, and feasibility of the financial goals.",
+                                                  "Assess the investor's financial situation and resources.",
+                                                  "Identify any changes or adjustments needed for the financial goals.",
+                                                  "Provide recommendations or suggestions to align the financial goals with the investor's current situation and future aspirations.",
+                                                  "Document the assessment findings and recommendations for future reference and tracking of financial goals."
+                                                  ]
+                                                  },
+                                                  {
+                                                  "name": "Review Financial Documents",
+                                                  "command": "review_financial_documents",
+                                                  "steps": [
+                                                  "Gather the relevant financial documents, such as bank statements, investment statements, or tax returns.",
+                                                  "Review the financial documents for accuracy, completeness, and compliance.",
+                                                  "Verify the consistency of the financial data across different documents.",
+                                                  "Identify any discrepancies, errors, or irregularities in the financial documents.",
+                                                  "Cross-reference the financial data with external sources or supporting documentation.",
+                                                  "Provide recommendations or suggestions for corrective actions or improvements based on the document review.",
+                                                  "Document the findings and recommendations for future reference or audits."
+                                                  ]
+                                                  }
+                                                  {
+                                                    "name": "Extract Website Information",
+                                                    "command": "extract_website_information",
+                                                    "args": {
+                                                    "website_url": "<website_url>"
+                                                    },
+                                                    "steps": [
+                                                    "Retrieve the HTML content of the specified website URL.",
+                                                    "Extract the relevant information from the HTML content using web scraping techniques.",
+                                                    "Parse the extracted information into a structured format for further processing.",
+                                                    "Provide the extracted information as the output result."
+                                                    ]
+                                                    },
+                                                    {
+                                                    "name": "Copy Website Code",
+                                                    "command": "copy_website_code",
+                                                    "args": {
+                                                    "website_url": "<website_url>"
+                                                    },
+                                                    "steps": [
+                                                    "Retrieve the HTML content of the specified website URL.",
+                                                    "Copy the entire code of the website, including HTML, CSS, and JavaScript.",
+                                                    "Store the copied code in the clipboard or save it to a designated file."
+                                                    ]
+                                                    },
+                                                    {
+                                                    "name": "Evaluate Website Code",
+                                                    "command": "evaluate_website_code",
+                                                    "args": {
+                                                    "website_url": "<website_url>"
+                                                    },
+                                                    "steps": [
+                                                    "Retrieve the HTML content of the specified website URL.",
+                                                    "Execute and evaluate the website code, including HTML, CSS, and JavaScript.",
+                                                    "Interact with the evaluated website to inspect its behavior, functionality, or visual representation."
+                                                    ]
+                                                    },
+                                                    {
+                                                    "name": "Copy Website Sitemap",
+                                                    "command": "copy_website_sitemap",
+                                                    "args": {
+                                                    "website_url": "<website_url>"
+                                                    },
+                                                    "steps": [
+                                                    "Retrieve the HTML content of the specified website URL.",
+                                                    "Extract the sitemap information from the HTML content, if available.",
+                                                    "Copy the sitemap data, including URLs and their corresponding page hierarchy or structure.",
+                                                    "Store the copied sitemap in the clipboard or save it to a designated file."
+                                                    ]
+                                                    },
+                                                    {
+                                                    "name": "Copy Website Files",
+                                                    "command": "copy_website_files",
+                                                    "args": {
+                                                    "website_url": "<website_url>"
+                                                    },
+                                                    "steps": [
+                                                    "Retrieve the HTML content of the specified website URL.",
+                                                    "Extract the file URLs referenced in the website, such as images, stylesheets, or scripts.",
+                                                    "Copy the identified file URLs or download the files to a designated location or directory."
+                                                    ]
+                                                    },
+                                                    {
+                                                    "name": "Summarize Website Information",
+                                                    "command": "summarize_website_information",
+                                                    "args": {
+                                                    "website_url": "<website_url>",
+                                                    "max_length": "<max_length>"
+                                                    },
+                                                    "steps": [
+                                                    "Retrieve the HTML content of the specified website URL.",
+                                                    "Extract the relevant information from the HTML content using web scraping techniques.",
+                                                    "Generate a summary of the extracted information using natural language processing algorithms.",
+                                                    "Limit the summary length to the specified maximum length, if provided."
+                                                    ]
+                                                    }
+                                                    ]]]
+                                                    {
+                                                      "name": "Extract Family Law Information",
+                                                      "command": "extract_family_law_information",
+                                                      "args": {
+                                                      "look_at_documents": true
+                                                      },
+                                                      "steps": [
+                                                      {
+                                                      "if": "look_at_documents is true",
+                                                      "do": "prompt the user to look at documents and extract information from Clio."
+                                                      },
+                                                      "Prompt the user to provide the necessary information for the family law document.",
+                                                      {
+                                                      "if": "petitioner.name is missing",
+                                                      "do": "conduct an interview to ask for the petitioner's name."
+                                                      },
+                                                      {
+                                                      "if": "petitioner.address.street is missing",
+                                                      "do": "conduct an interview to ask for the petitioner's street address."
+                                                      },
+                                                      {
+                                                      "if": "petitioner.address.city is missing",
+                                                      "do": "conduct an interview to ask for the petitioner's city."
+                                                      },
+                                                      {
+                                                      "if": "petitioner.address.state is missing",
+                                                      "do": "conduct an interview to ask for the petitioner's state."
+                                                      },
+                                                      {
+                                                      "if": "petitioner.address.zip is missing",
+                                                      "do": "conduct an interview to ask for the petitioner's zip code."
+                                                      },
+                                                      {
+                                                      "if": "petitioner.attorney.name is missing",
+                                                      "do": "conduct an interview to ask for the petitioner's attorney's name."
+                                                      },
+                                                      {
+                                                      "if": "petitioner.attorney.address.street is missing",
+                                                      "do": "conduct an interview to ask for the petitioner's attorney's street address."
+                                                      },
+                                                      {
+                                                      "if": "petitioner.attorney.address.city is missing",
+                                                      "do": "conduct an interview to ask for the petitioner's attorney's city."
+                                                      },
+                                                      {
+                                                      "if": "petitioner.attorney.address.state is missing",
+                                                      "do": "conduct an interview to ask for the petitioner's attorney's state."
+                                                      },
+                                                      {
+                                                      "if": "petitioner.attorney.address.zip is missing",
+                                                      "do": "conduct an interview to ask for the petitioner's attorney's zip code."
+                                                      },
+                                                      {
+                                                      "if": "petitioner.attorney.phone is missing",
+                                                      "do": "conduct an interview to ask for the petitioner's attorney's phone number."
+                                                      },
+                                                      {
+                                                      "if": "respondent.name is missing",
+                                                      "do": "conduct an interview to ask for the respondent's name."
+                                                      },
+                                                      {
+                                                      "if": "respondent.address.street is missing",
+                                                      "do": "conduct an interview to ask for the respondent's street address."
+                                                      },
+                                                      {
+                                                      "if": "respondent.address.city is missing",
+                                                      "do": "conduct an interview to ask for the respondent's city."
+                                                      },
+                                                      {
+                                                      "if": "respondent.address.state is missing",
+                                                      "do": "conduct an interview to ask for the respondent's state."
+                                                      },
+                                                      {
+                                                      "if": "respondent.address.zip is missing",
+                                                      "do": "conduct an interview to ask for the respondent's zip code."
+                                                      },
+                                                      {
+                                                      "if": "respondent.attorney.name is missing",
+                                                      "do": "conduct an interview to ask for the respondent's attorney's name."
+                                                      },
+                                                      {
+                                                      "if": "respondent.attorney.address.street is missing",
+                                                      "do": "conduct an interview to ask for the respondent's attorney's street address."
+                                                      },
+                                                      {
+                                                      "if": "respondent.attorney.address.city is missing",
+                                                      "do": "conduct an interview to ask for the respondent's attorney's city."
+                                                      },
+                                                      {
+                                                      "if": "respondent.attorney.address.state is missing",
+                                                      "do": "conduct an interview to ask for the
+                                                      
+                                                      respondent's attorney's state."
+                                                      },
+                                                      {
+                                                      "if": "respondent.attorney.address.zip is missing",
+                                                      "do": "conduct an interview to ask for the respondent's attorney's zip code."
+                                                      },
+                                                      {
+                                                      "if": "respondent.attorney.phone is missing",
+                                                      "do": "conduct an interview to ask for the respondent's attorney's phone number."
+                                                      },
+                                                      {
+                                                      "if": "caseDetails.dateOfMarriage is missing",
+                                                      "do": "conduct an interview to ask for the date of marriage."
+                                                      },
+                                                      {
+                                                      "if": "caseDetails.dateOfSeparation is missing",
+                                                      "do": "conduct an interview to ask for the date of separation."
+                                                      },
+                                                      {
+                                                      "if": "caseDetails.county is missing",
+                                                      "do": "conduct an interview to ask for the county where the case is filed."
+                                                      },
+                                                      {
+                                                      "if": "caseDetails.groundsForDissolution is missing",
+                                                      "do": "conduct an interview to ask for the grounds for dissolution."
+                                                      },
+                                                      {
+                                                      "if": "caseDetails.property.marital.description is missing",
+                                                      "do": "conduct an interview to ask for the description of marital property."
+                                                      },
+                                                      {
+                                                      "if": "caseDetails.property.marital.value is missing",
+                                                      "do": "conduct an interview to ask for the value of marital property."
+                                                      },
+                                                      {
+                                                      "if": "caseDetails.property.nonMarital.description is missing",
+                                                      "do": "conduct an interview to ask for the description of non-marital property."
+                                                      },
+                                                      {
+                                                      "if": "caseDetails.property.nonMarital.value is missing",
+                                                      "do": "conduct an interview to ask for the value of non-marital property."
+                                                      },
+                                                      {
+                                                      "if": "caseDetails.children is missing",
+                                                      "do": "conduct an interview to ask for the information of each child, including their names and ages."
+                                                      },
+                                                      "Generate a family law document using the provided information.",
+                                                      "Store the drafted document in MongoDB for future reference."
+                                                      ]
+                                                      }}
+                                                                                    

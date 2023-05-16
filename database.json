@@ -1,0 +1,43 @@
+// database.js
+
+const MongoDB = require('mongodb');
+
+// Connection URL and database name
+const url = 'mongodb://localhost:27017/';
+const dbName = 'task_app';
+
+// Function to initialize the database client and return the database object
+async function initializeDatabase() {
+  const client = await MongoDB.MongoClient.connect(url, { useUnifiedTopology: true });
+  const db = client.db(dbName);
+  return db;
+}
+
+// Function to insert a task into the database
+async function insertTask(task) {
+  const db = await initializeDatabase();
+  const collection = db.collection('tasks');
+  await collection.insertOne(task);
+}
+
+// Function to retrieve all tasks from the database
+async function getAllTasks() {
+  const db = await initializeDatabase();
+  const collection = db.collection('tasks');
+  const tasks = await collection.find().toArray();
+  return tasks;
+}
+
+// Function to update the status of a task in the database
+async function updateTaskStatus(taskId, completed) {
+  const db = await initializeDatabase();
+  const collection = db.collection('tasks');
+  await collection.updateOne({ _id: new MongoDB.ObjectId(taskId) }, { $set: { completed } });
+}
+
+// Export the functions
+module.exports = {
+  insertTask,
+  getAllTasks,
+  updateTaskStatus,
+};

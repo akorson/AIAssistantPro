@@ -1,0 +1,32 @@
+{
+  "name": "task-automation-app",
+  "version": "1.0.0",
+  "description": "An app for task automation",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "body-parser": "^1.19.1",
+    "cheerio": "^1.0.0-rc.10",
+    "cors": "^2.8.5",
+    "dropbox": "^5.2.0",
+    "express": "^4.17.1",
+    "googleapis": "^78.0.0",
+    "mongodb": "^4.1.4",
+    "node-outlook": "^1.11.0",
+    "openai": "^0.30.0"
+  },
+  "env": {
+    "OPENAI_API_KEY": "YOUR_OPENAI_API_KEY",
+    "DROPBOX_ACCESS_TOKEN": "YOUR_DROPBOX_ACCESS_TOKEN",
+    "ASANA_ACCESS_TOKEN": "YOUR_ASANA_ACCESS_TOKEN",
+    "OUTLOOK_CLIENT_ID": "YOUR_OUTLOOK_CLIENT_ID",
+    "OUTLOOK_CLIENT_SECRET": "YOUR_OUTLOOK_CLIENT_SECRET",
+    "GMAIL_CLIENT_ID": "YOUR_GMAIL_CLIENT_ID",
+    "GMAIL_CLIENT_SECRET": "YOUR_GMAIL_CLIENT_SECRET"
+  }
+}

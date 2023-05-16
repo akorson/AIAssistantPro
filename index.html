@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task Automation App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="sidebar">
+    <div class="tab">
+      <h2 class="tab-header">Settings</h2>
+      <div class="tab-content">
+        <!-- Settings content here -->
+        <form id="settingsForm">
+          <label for="temp">Temperature:</label>
+          <input type="number" id="temp" name="temp">
+          <br>
+          <label for="engine">Engine:</label>
+          <select id="engine" name="engine">
+            <option value="codex">Codex</option>
+            <option value="turbo">3.5-Turbo</option>
+          </select>
+          <br>
+          <label for="apis">APIs:</label>
+          <select id="apis" name="apis" multiple>
+            <option value="openai">OpenAI</option>
+            <option value="google">Google</option>
+            <option value="asana">Asana</option>
+            <option value="outlook">Outlook</option>
+            <option value="dropbox">Dropbox</option>
+            <option value="gdrive">GDrive</option>
+            <option value="mongodb">MongoDB</option>
+          </select>
+          <br>
+          <label for="autoFunction">Auto Function:</label>
+          <input type="checkbox" id="autoFunction" name="autoFunction">
+          <br>
+          <input type="submit" value="Submit">
+        </form>
+        <button class="close-btn">X</button>
+      </div>
+    </div>
+    <div class="tab">
+      <h2 class="tab-header">Upload</h2>
+      <div class="tab-content">
+        <!-- Upload content here -->
+        <form id="uploadForm">
+          <input type="file" id="file" name="file">
+          <br>
+          <input type="submit" value="Upload">
+        </form>
+        <button class="close-btn">X</button>
+      </div>
+    </div>
+  </div>
+  <div id="chatbox">
+    <!-- Chat messages here -->
+  </div>
+  <form id="messageForm">
+    <input type="text" id="message" name="message" placeholder="Type your message here">
+    <input type="submit" value="Send">
+  </form>
+  <script src="app.js"></script>
+  <script src="chat.js"></script>
+  <script src="settings.js"></script>
+  <script src="upload.js"></script>
+</body>
+</html>
