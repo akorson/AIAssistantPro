@@ -1,5 +1,5 @@
-const axios = require('axios');
-const { notifyChatbot } = require('./chatbot');
+const axios = require('axios')
+const { notifyChatbot } = require('./chatbot')
 
 const categories = {
   URGENT: [
@@ -11,7 +11,7 @@ const categories = {
     'taxes',
     'court',
     'cases',
-    'ARDC',
+    'ARDC'
   ],
   Leads: ['lead', 'leads'],
   Client_Communication: ['client communication'],
@@ -23,27 +23,32 @@ const categories = {
   Administrative_Matters: ['administrative matters'],
   Professional_Associations: ['professional associations'],
   Legal_Updates: ['legal updates'],
-  Other: [],
-};
-
-async function categorizeEmails(emails) {
-  const categorizedEmails = [];
-
-  for (const email of emails) {
-    email.category = 'Other';
-    for (const [category, keywords] of Object.entries(categories)) {
-      if (keywords.some((keyword) => email.body.includes(keyword) || email.subject.includes(keyword))) {
-        email.category = category;
-        if (category === 'URGENT') {
-          await notifyChatbot(email);
-        }
-        break;
-      }
-    }
-    categorizedEmails.push(email);
-  }
-
-  return categorizedEmails;
+  Other: []
 }
 
-module.exports = { categorizeEmails };
+async function categorizeEmails (emails) {
+  const categorizedEmails = []
+
+  for (const email of emails) {
+    email.category = 'Other'
+    for (const [category, keywords] of Object.entries(categories)) {
+      if (
+        keywords.some(
+          (keyword) =>
+            email.body.includes(keyword) || email.subject.includes(keyword)
+        )
+      ) {
+        email.category = category
+        if (category === 'URGENT') {
+          await notifyChatbot(email)
+        }
+        break
+      }
+    }
+    categorizedEmails.push(email)
+  }
+
+  return categorizedEmails
+}
+
+module.exports = { categorizeEmails }
