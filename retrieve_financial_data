@@ -1,0 +1,12 @@
+{
+  "thoughts": {
+    "text": "By using the Xero API keys, we can establish a secure connection and retrieve financial data.",
+    "reasoning": "The Xero API keys are necessary to authenticate and access the accounting software.",
+    "plan": "- Establish a secure connection with the Xero API using the API keys.\n- Retrieve income statements, balance sheets, cash flow statements, and transaction details.\n- Store the retrieved financial data for further processing.\n- Save the retrieved financial data in a structured format (e.g., JSON) for future analysis.",
+    "criticism": "We should ensure that the Xero API keys are valid and up-to-date."
+  },
+  "command": {
+    "name": "retrieve_financial_data",
+    "args": {}
+  }
+}
